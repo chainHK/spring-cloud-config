@@ -14,6 +14,18 @@ spring:
       client:
         url: http://localhost:8084
 
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        # 注意：此处在视频里是 include: ["health", "info"] 但已无效了，请修改
+        include: "*"
+        # include: health, info,refresh
+        exclude: env
+
 server:
   port: 8777
 
@@ -30,4 +42,5 @@ data:
   env: config-eureka-dev
   user:
     username: eureka-client-user
-    password: 52013141
+    password: 345335
+
