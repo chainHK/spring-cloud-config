@@ -23,7 +23,7 @@ management:
       exposure:
         # 注意：此处在视频里是 include: ["health", "info"] 但已无效了，请修改
         # include: "*"
-        include: refresh
+        include: "*",refresh
         exclude: env
 
 server:
@@ -42,4 +42,4 @@ data:
   env: config-eureka-dev
   user:
     username: eureka-client-user
-    password: 12345678
+    password: 123456783333
