@@ -1,5 +1,5 @@
 server:
-  port: 8777
+  port: 8787
 
 spring:
   application:
@@ -48,4 +48,4 @@ data:
   env: config-eureka-dev
   user:
     username: eureka-client-user
-    password: update123
+    password: 4567
