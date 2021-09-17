@@ -1,3 +1,6 @@
+server:
+  port: 8777
+
 spring:
   application:
     name: hello-spring-cloud-web-admin-feign
@@ -13,6 +16,11 @@ spring:
     admin:
       client:
         url: http://localhost:8084
+  rabbitmq:
+    host: 192.168.5.164
+    port: 5672
+    username: admin
+    password: admin
 
 management:
   endpoint:
@@ -26,9 +34,6 @@ management:
         include: "*"
         # include: health,info,refresh
         exclude: env
-
-server:
-  port: 8777
 
 eureka:
   client:
@@ -44,4 +49,3 @@ data:
   user:
     username: eureka-client-user
     password: 123456777
-
